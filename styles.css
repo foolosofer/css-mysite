@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Sacramento', cursive;
+    font-size: 4em;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+hr {
+    background-color: none;
+    border-color: #afacac;
+    border-style: dotted;
+    border-width: 10px 0 0;
+    margin: 120px auto;
+    width: 40%;
+}
+
+.top-container {
+    position: relative;
+    padding: 100px 100px 0;
+    background-color: #e4f9f5;
+}
+
+.middle-container {
+    padding-top: 50px;
+}
+
+.bottom-container {
+    margin: 80px 0 0;
+    background-color: #9DDAC6;
+    padding-top: 15px;
+}
+
+/* top container */
+.header {
+    position: fixed;
+    left: 10px; top: 10px;
+}
+
+.anime-girl {
+    width: 115px;
+    border-radius: 100%;
+}
+
+.programmer {
+    font-size: 1.5em;
+}
+
+.pro {
+    color: rgb(92, 163, 207);
+    text-decoration: underline solid; /* the color of the underline is the same as the underlined text */
+}
+
+.top-cloud {
+    /* 
+if the parent element has position: static; then the element is positioned relative to the viewport.
+otherwise, the element will be positioned relative to its parent element
+
+videos that explains this conecept:
+
+https://www.youtube.com/watch?v=jx5jmI0UlXU
+
+if the parent is positioned statically then it can't have anything positioned absolutely or relatively to it. 
+    */
+
+    position: absolute;
+    right: 700px;
+    top: 50px;
+    width: 8%;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 700px;
+    bottom: 500px;
+    width: 8%;
+}
+
+.mountain-image {
+    margin-top: 50px;
+    width: 35%;
+}
+
+/* middle-container */
+.profile-pic {
+    width: 12%;
+    border-radius: 100%;
+    margin-top: 50px;
+}
+
+.skills {
+    margin-top: 70px;
+}
+
+.my-skills {
+    text-decoration: underline;
+}
+
+.computer-image {
+    width: 15%;
+    border-radius: 25% 10%;
+}
+
+.demon-slayer-image {
+    border-radius: 10% / 50%;
+    width: 20%;
+    margin-top: 50px;
+}
+
+.contact-me {
+    margin: 70px;
+}
+
+.get-in-touch {
+    text-decoration: underline;
+}
+
+.btn {
+    background: linear-gradient(#abeed8, #7fac9d);
+    padding: 15px;
+    border-radius: 13px;
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(49, 130, 180);
+}
+
+.btn:hover {
+    background: linear-gradient(#7fac9d, #abeed8);
+}
+
+/* bottom-container */
+.copy-right {
+    margin: 20px 0 0;
+    padding-bottom: 20px;
+}
