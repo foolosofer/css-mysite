@@ -95,7 +95,7 @@ if the parent is positioned statically then it can't have anything positioned ab
 }
 
 .mountain-image {
-    margin-top: 50px;
+    margin: 50px 0 -4.3px;
     width: 35%;
 }
 
