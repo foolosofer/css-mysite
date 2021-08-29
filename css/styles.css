@@ -53,11 +53,17 @@ hr {
 .header {
     position: fixed;
     left: 10px; top: 10px;
+    width: 30%;
+    text-align: left;
 }
 
 .anime-girl {
-    width: 115px;
+    width: 15%; /* width: 115px */
     border-radius: 100%;
+}
+
+.anime-girl-text {
+    display: inline-block;
 }
 
 .programmer {
@@ -66,7 +72,7 @@ hr {
 
 .pro {
     color: rgb(92, 163, 207);
-    text-decoration: underline solid; /* the color of the underline is the same as the underlined text */
+    text-decoration: underline solid; /* the default color of the underline is the same as the underlined text */
 }
 
 .top-cloud {
@@ -95,7 +101,7 @@ if the parent is positioned statically then it can't have anything positioned ab
 }
 
 .mountain-image {
-    margin-top: 50px;
+    margin: 50px 0 -4.3px;
     width: 35%;
 }
 
@@ -104,6 +110,8 @@ if the parent is positioned statically then it can't have anything positioned ab
     width: 12%;
     border-radius: 100%;
     margin-top: 50px;
+    box-shadow: 7px 5px 4px rgb(151, 151, 151); /* offset-x | offset-y | blur-radius | spread-radius | color
+    note: positive values cause the shadow to grow bigger, negative values do the opposite */
 }
 
 .skills {
@@ -134,16 +142,21 @@ if the parent is positioned statically then it can't have anything positioned ab
 }
 
 .btn {
-    background: linear-gradient(#abeed8, #7fac9d);
-    padding: 15px;
-    border-radius: 13px;
-    font-size: 25px;
+    border-radius: 30px;
+    border: solid 1px;
+    padding: 15px 30px;
+    color: #abeed8;
+    letter-spacing: 4px;
     text-decoration: none;
-    color: rgb(49, 130, 180);
+    font-size: 24px;
+    transition: 0.3s, color 0.6s;
 }
 
 .btn:hover {
-    background: linear-gradient(#7fac9d, #abeed8);
+    border: none;
+    color: white;
+    background: #abeed8;
+    box-shadow: 0 0 10px #abeed8, 0 0 40px #abeed8, 0 0 80px #abeed8; /* commas allows you to create multiple shadows */
 }
 
 /* bottom-container */
