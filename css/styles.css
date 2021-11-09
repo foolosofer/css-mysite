@@ -22,6 +22,17 @@ h3 {
 
 p {
     font-size: 1.3em;
+    line-height: 2;
+}
+
+a {
+    margin: 5px;
+    text-decoration: none;
+    color: darkgreen;
+}
+
+a:hover {
+    color: white;
 }
 
 hr {
@@ -88,16 +99,16 @@ if the parent is positioned statically then it can't have anything positioned ab
     */
 
     position: absolute;
-    right: 700px;
-    top: 50px;
-    width: 8%;
+    right: 25%;
+    top: 10%;
+    width: 10%;
 }
 
 .bottom-cloud {
     position: absolute;
-    left: 700px;
-    bottom: 500px;
-    width: 8%;
+    left: 25%;
+    bottom: 50%;
+    width: 10%;
 }
 
 .mountain-image {
@@ -114,6 +125,11 @@ if the parent is positioned statically then it can't have anything positioned ab
     note: positive values cause the shadow to grow bigger, negative values do the opposite */
 }
 
+.profile-message {
+    width: 40%;
+    margin: 0 auto;
+}
+
 .skills {
     margin-top: 70px;
 }
@@ -122,15 +138,25 @@ if the parent is positioned statically then it can't have anything positioned ab
     text-decoration: underline;
 }
 
+.skill-row {
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+}
+
+.images {
+    width: 25%;
+    margin: 0 30px;
+}
+
 .computer-image {
-    width: 15%;
     border-radius: 25% 10%;
+    float: left;
 }
 
 .demon-slayer-image {
     border-radius: 10% / 50%;
-    width: 20%;
-    margin-top: 50px;
+    float: right;
 }
 
 .contact-me {
@@ -161,6 +187,8 @@ if the parent is positioned statically then it can't have anything positioned ab
 
 /* bottom-container */
 .copy-right {
+    font-size: 1rem;
     margin: 20px 0 0;
     padding-bottom: 20px;
+    text-decoration: none;
 }
